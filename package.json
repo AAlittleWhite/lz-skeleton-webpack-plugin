@@ -1,0 +1,49 @@
+{
+  "name": "by-skeleton-webpack-plugin",
+  "version": "1.0.0",
+  "author": "baitaiyan",
+  "description": "单页面spa骨架屏 webpack插件",
+  "private": false,
+  "keywords": [
+    "Typescript",
+    "Webpack plugin",
+    "Javascript plugin",
+    "SPA Skeleton"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "father-build",
+    "eslint": "eslint ./src/*",
+    "release-alpha": "npm publish --tag=alpha",
+    "release-beta": "npm publish --tag=beta",
+    "release-rc": "npm publish --tag=rc",
+    "release-latest": "npm publish --tag=latest"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "4.5.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.35.0",
+    "father-build": "^1.22.5",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4"
+  },
+  "peerDependencies": {
+    "html-webpack-plugin": ">=4.0.0"
+  },
+  "lint-staged": {
+    "*.ts?(x)": [
+      "eslint --fix",
+      "prettier --parser=typescript --write",
+      "git add"
+    ]
+  }
+}
