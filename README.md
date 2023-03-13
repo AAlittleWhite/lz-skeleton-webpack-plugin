@@ -21,3 +21,5 @@ new SkeletonPlugin({
 ## License
 
 [MIT](LICENSE)
+
+## todo
