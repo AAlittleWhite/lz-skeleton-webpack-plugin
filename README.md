@@ -23,5 +23,3 @@ new SkeletonPlugin({
 [MIT](LICENSE)
 
 ## todo
-
-## todo1
